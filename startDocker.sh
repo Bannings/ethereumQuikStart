@@ -1,0 +1,1 @@
+docker run -p 8545:8545 garurumon --datadir "/privatechain/data" --verbosity 0 --rpcapi="admin,db,eth,debug,miner,net,shh,txpool,personal,web3" --verbosity 0 --rpccorsdomain="*" --networkid=9195 --rpc --rpcaddr="0.0.0.0" --unlock 0  --password /privatechain/passfile --gasprice 0 --targetgaslimit 90000000000000000 --mine --minerthreads=1 2>>log.log
